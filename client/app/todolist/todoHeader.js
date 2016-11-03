@@ -2,7 +2,7 @@
 * @Author: zjy
 * @Date:   2016-10-21 11:06:50
 * @Last Modified by:   zjy
-* @Last Modified time: 2016-10-21 14:44:00
+* @Last Modified time: 2016-11-02 17:20:36
 */
 
 'use strict';
@@ -38,6 +38,7 @@ class TodoHeader extends Component{
     render(){
         return(<TextField 
             value={this.state.value||""}
+            fullWidth="true"
             onKeyUp={this.onKeyUp.bind(this)}
             onChange={this.valueChange.bind(this)}
             onBlur={this.handler.bind(this)}
